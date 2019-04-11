@@ -7,7 +7,7 @@ compile:
 	go build nosmoke.go
 
 install: all
-	cp ./.nosmoke.json ~/
+	[ -e ~/.nosmoke.json ] || cp ./.nosmoke.json ~/
 	sudo cp ./nosmoke /usr/local/bin/
 
 uninstall:
