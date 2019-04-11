@@ -80,6 +80,7 @@ func main() {
 		switch args[0] {
 		case "break":
 			smokeFreeBreak(&s)
+			stats(s)
 			save(s)
 		case "stats":
 			stats(s)
