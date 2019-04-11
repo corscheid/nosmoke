@@ -40,7 +40,7 @@ func smokeFreeBreak(s *SaveData) {
 }
 
 func stats(s SaveData) {
-	fmt.Printf("%s: %d\n%s: %d\n%s: $%.2f\n",
+	fmt.Printf("%s: %d\n%s: %d minutes\n%s: $%.2f\n",
 		texts[0], s.NumCigs,
 		texts[1], s.Mins,
 		texts[2], s.MoneySaved)
